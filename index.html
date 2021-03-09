@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza maker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="header__text">
+                    <p>Create your dream pizza</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="constructor">
+        <div class="container box">
+            <div class="consctructor__box__top">
+                <div class="container__box__img">
+                    <div class="current-pizza-item-dough"></div>
+                    <div class="current-pizza-item kalmary"></div>
+                    <div class="current-pizza-item krevetka"></div>
+                    <div class="current-pizza-item midii"></div>
+                    <div class="current-pizza-item semga"></div>
+                    <div class="current-pizza-item tunec"></div>
+                    <div class="current-pizza-item bekon"></div>
+                    <div class="current-pizza-item vetchina"></div>
+                    <div class="current-pizza-item itkolbaski"></div>
+                    <div class="current-pizza-item bavkolbaski"></div>
+                    <div class="current-pizza-item kopkurica"></div>
+                    <div class="current-pizza-item kuricagrill"></div>
+                    <div class="current-pizza-item peperoni"></div>
+                    <div class="current-pizza-item svinfarsh"></div>
+                    <div class="current-pizza-item govfarsh"></div>
+                    <div class="current-pizza-item frikadelki"></div>
+                    <div class="current-pizza-item kebab"></div>
+                    <div class="current-pizza-item stripsy"></div>
+                    <div class="current-pizza-item kunzhut"></div>
+                    <div class="current-pizza-item oregano"></div>
+                    <div class="current-pizza-item halapenyo"></div>
+                    <div class="current-pizza-item petrushka"></div>
+                    <div class="current-pizza-item ananas"></div>
+                    <div class="current-pizza-item kukuruza"></div>
+                    <div class="current-pizza-item luk"></div>
+                    <div class="current-pizza-item masliny"></div>
+                    <div class="current-pizza-item ogurec"></div>
+                    <div class="current-pizza-item olivki"></div>
+                    <div class="current-pizza-item perec"></div>
+                    <div class="current-pizza-item pomidor"></div>
+                    <div class="current-pizza-item shamp"></div>
+                    <div class="current-pizza-item opyata"></div>
+                    <div class="current-pizza-item baklazhan"></div>
+                    <div class="current-pizza-item dorblu"></div>
+                    <div class="current-pizza-item parmezan"></div>
+                    <div class="current-pizza-item feta"></div>
+                    <div class="current-pizza-item filadelfia"></div>
+                    <div class="current-pizza-item chedder"></div>
+                </div>
+                <div class="container__box__content">
+                    <h2>Конструктор пиццы</h2>
+                    <div class="dough">
+                        <div class="dough__text">
+                            <h4>Тесто:</h4>
+                            <h3 id="Пышное" class="dough__text__change">Пышное</h3>
+                            <h3 id="Тонкое" class="dough__text__change">Тонкое</h3>
+                            <h3 id="Хот-дог" class="dough__text__change">Хот-Дог</h3>
+                        </div>
+                        <div class="dough__choice">
+                            <div id='americano' data-dough='#Пышное' class="dough__choice__img"> <img
+                                    src="./assets/images/item-americano.png"> </div>
+                            <div id='italano' data-dough='#Тонкое' class="dough__choice__img"> <img
+                                    src="./assets/images/item-italano.png"></div>
+                            <div id='hotdog' data-dough='#Хот-дог' class="dough__choice__img"> <img
+                                    src="./assets/images/hotdog.png"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <div class="size__text">
+                            <h4>Размер:</h4>
+                            <h3 id="s50" class="size__text__change">50 см</h3>
+                            <h3 id="s30" class="size__text__change">30 см</h3>
+                            <h3 id="s20" class="size__text__change">20 см</h3>
+                        </div>
+                        <div class="size__choice">
+                            <div data-id='pizza-size-large' data-size='#s50' class="size__choice__img"> <img
+                                    src="./assets/images/pizza-size-large.png"></div>
+                            <div data-id='pizza-size-mid' data-size='#s30' class="size__choice__img"> <img
+                                    src="./assets/images/pizza-size-mid.png"></div>
+                            <div data-id='pizza-size-small' data-size='#s20' class="size__choice__img"><img
+                                    src="./assets/images/pizza-size-small.png"></div>
+                        </div>
+                    </div>
+                    <div class="sauce">
+                        <div class="sauce__text">
+                            <h4>Соус:</h4>
+                            <h3 id="Гарлик" class="sauce__text__change">Чесночный</h3>
+                            <h3 id="Ранч" class="sauce__text__change">Ранч</h3>
+                            <h3 id="Bbq" class="sauce__text__change">Барбекю</h3>
+                            <h3 id="Сальса" class="sauce__text__change">Сальса</h3>
+                        </div>
+                        <div class="sauce__choice">
+                            <div id='garlik' data-sauce='#Гарлик' class="sauce__choice__img"> <img
+                                    src="./assets/images/garlik.png"></div>
+                            <div id='ranch' data-sauce='#Ранч' class="sauce__choice__img"><img
+                                    src="./assets/images/ranch.png"></div>
+                            <div id='bbq' data-sauce='#Bbq' class="sauce__choice__img"><img
+                                    src="./assets/images/bbq.png"></div>
+                            <div id='salsa' data-sauce='#Сальса' class="sauce__choice__img"><img
+                                    src="./assets/images/salsa.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="consctructor__box__bottom">
+                <div class="pizzaIngredients">
+                    <h3>Ваша пицца состоит из:</h3>
+                    <div class="selectedIngridients">
+                    </div>
+                </div>
+                <div class='allIngredients'>
+                    <h3>Дополнительные начинки:</h3>
+                    <div id='typesOfIngredients'>
+                        <div class="ingredients__icons">
+                            <div id='seaIngredients' data-id="#seaIngredientsAll" class="icon"><i class="fas fa-fish"></i></div>
+                            <div id='meatIngredients' data-id="#meatIngredientsAll" class="icon"><i class="fas fa-drumstick-bite"></i></div>
+                            <div id='vegIngredients' data-id="#vegIngredientsAll" class="icon"><i class="fas fa-pepper-hot"></i></div>
+                            <div id='cheeseIngredients' data-id="#cheeseIngredientsAll" class="icon"><i class="fas fa-cheese"></i></div>
+                        </div>
+                    </div>
+                    <div class='wraperIngridients'>
+                        <div id='seaIngredientsAll' class="ing__changes"></div>
+                        <div id='meatIngredientsAll' class="ing__changes"></div>
+                        <div id='vegIngredientsAll' class="ing__changes"></div>
+                        <div id='cheeseIngredientsAll' class="ing__changes"></div>
+                    </div>
+                </div>
+            </div>
+            <div class='allAmounts'>
+                <div class="amounts_right">
+                    <div class='amounts'>
+                        <p>11 руб</p>
+                    </div>
+                    <div class='addToCart'>
+                        <button class="basket">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

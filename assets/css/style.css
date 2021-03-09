@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: none;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4{
+    margin: 0;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)), url('../images/repeat_bg.jpg');
+    background-position:center top;
+	background-repeat:repeat-y;
+    font-family: 'Coming Soon', cursive;
+}
+header{
+    width: 100%;
+    background-color: #cc4443;
+    color: #ffff;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+    padding: 1.5vh 0;
+    margin-bottom: 8vh;
+}
+.logo img{
+    width: 200px;
+    margin-right: 10vw;
+}
+.header__text{
+    font-size: 7vh;
+    
+}
+
+/* CONSTRUCTOR */
+
+.container.box{
+    width: 70%;
+    min-width: 775px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.consctructor__box__top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #555;
+    margin-bottom: 7vh;
+}
+.container__box__img, .pizzaIngredients{
+    width: 45%;
+}
+.pizzaIngredients{
+    padding-right: 40px;
+}
+.pizzaIngredients h3{
+    margin-bottom: 20px;
+}
+.container__box__content, .allIngredients{
+    width: 55%;
+}
+.current-pizza-item{
+    width: 25%;
+    height: 50%;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+    position: absolute;
+    top: 30%;
+    left: 17.5%;
+}
+.current-pizza-item-dough{
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    background-image: url('../images/Custom_Pizza_3.jpg');
+}
+.current-pizza-item.kalmary{
+    background-image: url('../images/ingredientsOnPizza/7492f8bf161557c88183eb7fafe6859a.png');
+}
+.current-pizza-item.krevetka{
+    background-image: url('../images/ingredientsOnPizza/5eae467115960e4cb6a840e09eabbb04.png');
+}
+.current-pizza-item.midii{
+    background-image: url('../images/ingredientsOnPizza/953773f3d81859dd9d102b2c1d765e8c.png');
+}
+.current-pizza-item.semga{
+    background-image: url('../images/ingredientsOnPizza/91febea2a0d2606da1670cb5b8194c29.png');
+}
+.current-pizza-item.tunec{
+    background-image: url('../images/ingredientsOnPizza/c4cea1b7f5fcfe3c4d78deb3439ed2f6.png');
+}
+.current-pizza-item.bekon{
+    background-image: url('../images/ingredientsOnPizza/13e1bc66309f579198a61c4e48e6cf90.png');
+}
+.current-pizza-item.vetchina{
+    background-image: url('../images/ingredientsOnPizza/50fe8ec54aa482b699ab989a98e484d5.png');
+}
+.current-pizza-item.itkolbaski{
+    background-image: url('../images/ingredientsOnPizza/3e7d9a805e3e97e95a87acde1fd28e64.png');
+}
+.current-pizza-item.bavkolbaski{
+    background-image: url('../images/ingredientsOnPizza/7492f8bf161557c88183eb7fafe6859a.png');
+}
+.current-pizza-item.kopkurica{
+    background-image: url('../images/ingredientsOnPizza/a3d7461699a6bf9727902206abef9d26.png');
+}
+.current-pizza-item.kuricagrill{
+    background-image: url('../images/ingredientsOnPizza/d83951e1f448eb24da03d8682bed99aa.png');
+}
+.current-pizza-item.peperoni{
+    background-image: url('../images/ingredientsOnPizza/97fffd6da2c7545bf30642b0c8eaeaa4.png');
+}
+.current-pizza-item.svinfarsh{
+    background-image: url('../images/ingredientsOnPizza/58302d87a58b34bbf215193cd468db36.png');
+}
+.current-pizza-item.govfarsh{
+    background-image: url('../images/ingredientsOnPizza/58302d87a58b34bbf215193cd468db36.png');
+}
+.current-pizza-item.frikadelki{
+    background-image: url('../images/ingredientsOnPizza/d8755b968188016f7461691cd131b309.png');
+}
+.current-pizza-item.kebab{
+    background-image: url('../images/ingredientsOnPizza/2c7bc29d2a184b70a09b0496dfdf169f.png');
+}
+.current-pizza-item.stripsy{
+    background-image: url('../images/ingredientsOnPizza/db9a3ef33e0d5046f17f33ccf0fded7e.png');
+}
+.current-pizza-item.oregano{
+    background-image: url('../images/ingredientsOnPizza/6a4b5884671d7706ae2f491ef559d697.png');
+    top: 23%;
+    left: 15%;
+}
+.current-pizza-item.halapenyo{
+    background-image: url('../images/ingredientsOnPizza/78b02540899876aec724752854fab9ab.png');
+}
+.current-pizza-item.petrushka{
+    background-image: url('../images/ingredientsOnPizza/51518bd2cc71cd590b23ade9aa994130.png');
+}
+.current-pizza-item.ananas{
+    background-image: url('../images/ingredientsOnPizza/54ff4e59638d2d9c3f031d51b3b040a6.png');
+}
+.current-pizza-item.kukuruza{
+    background-image: url('../images/ingredientsOnPizza/c1d95f138cbd14ea913db3c7711b13f2.png');
+}
+.current-pizza-item.luk{
+    background-image: url('../images/ingredientsOnPizza/066bb5b36e1e03281e342bb13513e29a.png');
+}
+.current-pizza-item.masliny{
+    background-image: url('../images/ingredientsOnPizza/874830532a091ddb297bd5bb3ff6c1df.png');
+}
+.current-pizza-item.ogurec{
+    background-image: url('../images/ingredientsOnPizza/2dc3dd02bbb65a1e7f37e5a3a72f8b10.png');
+}
+.current-pizza-item.olivki{
+    background-image: url('../images/ingredientsOnPizza/6a6d885bcd03cbd65c147762fc341e8f.png');
+}
+.current-pizza-item.perec{
+    background-image: url('../images/ingredientsOnPizza/ca1de8f94f2f36e6c7d638068139a47a.png');
+}
+.current-pizza-item.pomidor{
+    background-image: url('../images/ingredientsOnPizza/73478e1121e976b26e27976aba158927.png');
+}
+.current-pizza-item.shamp{
+    background-image: url('../images/ingredientsOnPizza/0f7fc79c9a92b0da4cb6acb332398b9d.png');
+}
+.current-pizza-item.opyata{
+    background-image: url('../images/ingredientsOnPizza/69407041878080ed4fbb5921b2a78b5b.png');
+}
+.current-pizza-item.baklazhan{
+    background-image: url('../images/ingredientsOnPizza/48c56a32cf7d567b92d0298cf975c6d2.png');
+}
+
+.current-pizza-item.active{
+    opacity: 1;
+}
+.container__box__content h2{
+    margin-bottom: 6vh;
+}
+.dough , .size, .sauce{
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+.dough__choice, .size__choice, .sauce__choice{
+    display: flex;
+}
+.dough__choice__img{
+    margin-left: 20px;
+    opacity: .7;
+    cursor: pointer;
+}
+.dough__choice__img.active{
+    opacity: 1;
+}
+.size__choice__img{
+    margin-left: 62px;
+    opacity: .7;
+    cursor: pointer;
+}
+.size__choice__img.active{
+    opacity: 1;
+}
+.sauce__choice__img{
+    opacity: .6;
+}
+.sauce__choice__img img{
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sauce__choice__img.active{
+    opacity: 1;
+}
+.dough__text__change, 
+.size__text__change, 
+.sauce__text__change{
+    display: none;
+}
+.dough__text__change.active, 
+.size__text__change.active, 
+.sauce__text__change.active{
+    display: block;
+}
+.consctructor__box__bottom{
+    display: flex;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+.allIngredients h3{
+    margin-bottom: 2vh;
+}
+.ingredients__icons{
+    display: flex;
+    font-size: 35px;
+    color: #555;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+.icon{
+    margin-right: 35px;
+}
+.icon:hover,
+.icon.active{
+    color: #f37125;
+}
+.oneIngridient{
+    font-size: 14px;
+    text-align: center;
+    width: 20%;
+}
+.oneIngridient.active img{
+    border: 1px solid #cc4443;
+}
+.oneIngridient img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.textIngridient{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.textIngridient p{
+    color: #555;
+}
+.textIngridient span{
+    color: #cc4443;
+}
+.ing__changes{
+    display: none;
+}
+.ing__changes.active{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    background-color: #f37125;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #ffffff;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+.basket{
+    margin-left: 20px;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.allAmounts{
+    display: flex;
+    justify-content: space-between;
+    font-size: 5vh;
+}
+.amounts_right{
+    display: flex;
+}
+.selectedIngridients{
+    display: flex;
+    flex-wrap: wrap;
+}
