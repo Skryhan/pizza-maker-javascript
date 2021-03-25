@@ -71,22 +71,22 @@ header{
     width: 55%;
 }
 .current-pizza-item{
-    width: 25%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     opacity: 0;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: inherit;
     position: absolute;
-    top: 30%;
-    left: 17.5%;
+    top: 10%;
+    left: 8%;
 }
 .current-pizza-item-dough{
-    background-size: cover;
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: relative;
     background-image: url('../images/Custom_Pizza_3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .current-pizza-item.kalmary{
     background-image: url('../images/ingredientsOnPizza/7492f8bf161557c88183eb7fafe6859a.png');
